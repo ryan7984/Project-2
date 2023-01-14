@@ -24,7 +24,6 @@ body {
     text-align: center;
 }
 
-
 .column {
     display:flex;
     flex-direction: column;
@@ -40,28 +39,27 @@ body {
   }
 
   #game-left{
-   margin-bottom: auto;
-   font-size: 50px;
-
+   font-size: 2rem;
+   padding:200px;
+   background: rgb(26, 45, 64,.6);
+   border-radius: 1000px;
   }
 
   #game-right{
-    margin-bottom: auto;
-    font-size: 50px;
+    font-size: 2rem;
+    padding:200px;
+    background: rgb(26, 45, 64,.6);
+    border-radius: 1000px;
+ }
  
-   }
-
-
 #prompt{
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 3rem;
     color:#fFD200;
     font-weight: 900;
     background: rgb(26, 45, 64,.6);
-    border-radius: 10px;
+    border-radius: 100px;
     text-align: center;
-   
-  
 }
 
 button{
@@ -72,8 +70,6 @@ button{
     border: none;
     cursor: pointer;
 }
-
-button:hover {background-color: #3e8e41}
 
 button:active {
   transform: translateY(4px);
