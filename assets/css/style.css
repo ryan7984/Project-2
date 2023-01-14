@@ -25,7 +25,7 @@ body {
 }
 
 
-#game {
+.column {
     display:flex;
     flex-direction: column;
     align-items: center; 
@@ -38,6 +38,19 @@ body {
     display: table;
     clear: both;
   }
+
+  #game-left{
+   margin-bottom: auto;
+   font-size: 50px;
+
+  }
+
+  #game-right{
+    margin-bottom: auto;
+    font-size: 50px;
+ 
+   }
+
 
 #prompt{
     font-size: 2em;
