@@ -9,3 +9,50 @@ body {
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
+
+#game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prompt{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+button{
+    font-size:1em;
+    padding:0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+#rock{
+background-color: #605e5e;
+color: #fff;
+}
+
+#paper{
+background-color: #f2f2f2;
+color: #605e5e
+}
+
+#scissors{
+background-color: #c9c9c9;
+color: #fff;
+}
+
+button:hover{
+    color: #fff;
+}
+
+#scissors:hover{
+    color: #605e5e;
+}
+
+
+
+
