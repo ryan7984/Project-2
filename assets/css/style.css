@@ -1,38 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #1A2D40;
+    padding: 10px 10px;
+    left: 0;      
+    top: 0;       
+    width: 100%;
+}
+
 body {
-    background-color: white;
-    font-family: 'Press Start 2P', cursive;
-    color: #445361;
+    background: url("../images/rock-paper-scissors.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family:'Michroma', sans-serif;
+    color: white;
     text-align: center;
 }
 
-#prompt {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+
+#game {
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    float: left;
+    width: 33.33%;
 }
 
-#game{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 #prompt{
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 2em;
+    padding: 3rem;
+    color:#fFD200;
+    font-weight: 900;
+    background: rgb(26, 45, 64,.6);
+    border-radius: 10px;
+    text-align: center;
+   
+  
 }
 
 button{
-    font-size:1em;
+    font-size:2.0em;
     padding:0.5em;
-    margin: 0.5em;
-    border-radius: 0.5em;
+    margin: 2em;
+    border-radius: 2em;
     border: none;
     cursor: pointer;
 }
 
+button:hover {background-color: #3e8e41}
+
+button:active {
+  transform: translateY(4px);
+}
+
 #rock{
-background-color: #605e5e;
-color: #fff;
+    background-color: #605e5e;
+    color: #fff;
 }
 
 #paper{
@@ -45,12 +81,25 @@ background-color: #c9c9c9;
 color: #fff;
 }
 
-button:hover{
-    color: #fff;
+footer {
+	background-color:#1A2D40;
+	text-align: center;
+    width: 100%;
+    bottom: 0;
+    right: 0;	
+    box-sizing: border-box;
+    height: 60px;
+    overflow: hidden;
+    position:absolute
 }
 
-#scissors:hover{
-    color: #605e5e;
+.rules {
+    text-align:center;
+    padding: 1rem;
+}
+
+.rules > li{
+   display: inline;
 }
 
 
