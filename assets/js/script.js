@@ -6,7 +6,7 @@ const promptText = document.querySelector('#prompt');
 let playerScore = 0;
 let computerScore = 0;
 
-//Click event listner 
+//Click event listner. 
 let playerChoice, computerChoice, result;
   buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -17,7 +17,7 @@ let playerChoice, computerChoice, result;
   //The computers choice.
   computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  //This will decide the winner between the player and computer and display the result in the prompt.  
+  //This will decide the winner between the player and computer and display the result in the prompt section.  
   if (playerChoice === computerChoice) {
     result = 'tie';
     } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
@@ -27,6 +27,7 @@ let playerChoice, computerChoice, result;
       } else  {
               result = 'computer';
               }
+              //The result that will appear on the screen after the player makes there choice. 
               promptText.textContent = `You chose ${playerChoice}, the computer chose ${computerChoice}. You ${result === 'player' ? 'win' : result === 'tie' ? 'tie' : 'lose'}.`; 
             
             //This will determine the score.

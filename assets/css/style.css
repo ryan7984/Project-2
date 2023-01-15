@@ -5,6 +5,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    
 }
 
 /*Styling for the header*/
@@ -26,6 +27,7 @@ body {
     font-family:'Michroma', sans-serif;
     color: white;
     text-align: center;
+    
 }
 
 /*Styling for the three column sectionS*/
@@ -116,6 +118,8 @@ footer {
     height: 60px;
     overflow: hidden;
     clear: both;
+    position: fixed;
+    
 }
 
 /*Styling for the text in the footer*/
