@@ -1,8 +1,7 @@
  # Project 2: Rock, Paper, Scissors game 
 
 Rock, Paper Scissors is a one page website where the user can play against the computer at a game of rock, Paper, Scissors
-The rules of the game are rock beats scissors, scissors beats paper and paper beats rock. 
-the score is available for the user to see in real time.   
+The rules of the game are rock beats scissors, scissors beats paper and paper beats rock. The user makes a choice between rock paper scissors and computer also makes a choice at random and the score is available for the user to see in real time.   
 
 
 
