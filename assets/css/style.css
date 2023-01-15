@@ -27,6 +27,8 @@ body {
     font-family:'Michroma', sans-serif;
     color: white;
     text-align: center;
+    width:100%;
+    height:100%;
     
 }
 
@@ -118,8 +120,6 @@ footer {
     height: 60px;
     overflow: hidden;
     clear: both;
-    position: fixed;
-    
 }
 
 /*Styling for the text in the footer*/
@@ -133,14 +133,16 @@ footer {
    display: inline;
 }
 
-/*Styling to make the site responsive for mobile devices bringing everthing into one column*/ 
+/*Styling to make the site responsive for mobile devices by bringing the game into one column*/ 
 @media(max-width:800px){
+
     .column{
     flex-direction: column;
 }
     #game-left, #game-right, .column{
     width:100%;
     }
+
 }
 
 
