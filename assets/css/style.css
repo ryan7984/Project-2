@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+#paper{
+    background-color: #f2f2f2;
+    color: #605e5e
+    }
+
+
 .header {
     overflow: hidden;
     background-color: #1A2D40;
@@ -25,36 +31,43 @@ body {
 }
 
 .column {
+    grid-template-columns: auto auto; 
     display:flex;
     flex-direction: column;
     align-items: center; 
     float: left;
-    width: 33.33%;
+    width: 60%;
+    padding: 1rem;
+          
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  #game-left{
-   font-size: 2rem;
-   padding:200px;
-   background: rgb(26, 45, 64,.6);
-   border-radius: 1000px;
-  }
-
-  #game-right{
-    font-size: 2rem;
-    padding:200px;
+  #game-left {
+    font-size: 1.5rem;
+    padding:1.0em;
     background: rgb(26, 45, 64,.6);
-    border-radius: 1000px;
+    border-radius: 100px;
+    color:#fFD200;
+    font-weight: 900;
+    width:20%
+  }
+  
+  
+  
+  
+  
+  #game-right {
+   font-size: 1.5rem;
+   padding:1.0em;
+   background: rgb(26, 45, 64,.6);
+   border-radius: 100px;
+   color:#fFD200;
+   font-weight: 900;
+   width:20%
  }
  
 #prompt{
     font-size: 1.5em;
-    padding: 3rem;
+    padding: 1em;
     color:#fFD200;
     font-weight: 900;
     background: rgb(26, 45, 64,.6);
@@ -80,10 +93,7 @@ button:active {
     color: #fff;
 }
 
-#paper{
-background-color: #f2f2f2;
-color: #605e5e
-}
+
 
 #scissors{
 background-color: #c9c9c9;
@@ -99,7 +109,6 @@ footer {
     box-sizing: border-box;
     height: 60px;
     overflow: hidden;
-    position:absolute
 }
 
 .rules {
@@ -111,6 +120,18 @@ footer {
    display: inline;
 }
 
+
+@media(max-width:600px){
+    .column{
+
+flex-direction: column;
+
+    }
+
+    #game-left, #game-right, .column{
+        width:100%;
+    }
+}
 
 
 

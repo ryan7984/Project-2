@@ -36,8 +36,8 @@ let playerChoice, computerChoice, result;
                 computerScore++;
             }
 
-            document.querySelector('#game-left').textContent= `Player: ${playerScore}`;
-            document.querySelector('#game-right').textContent= `Computer: ${computerScore}`;
+            document.querySelector('#game-left').textContent= `Player Score: ${playerScore}`;
+            document.querySelector('#game-right').textContent= `Computer Score: ${computerScore}`;
             });
         });
             
