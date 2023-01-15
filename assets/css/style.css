@@ -1,3 +1,5 @@
+
+/*General styling*/
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,7 @@
     box-sizing: border-box;
 }
 
-#paper{
-    background-color: #f2f2f2;
-    color: #605e5e
-    }
-
-
+/*Styling for the header*/
 .header {
     overflow: hidden;
     background-color: #1A2D40;
@@ -20,6 +17,7 @@
     width: 100%;
 }
 
+/*Styling for the body*/
 body {
     background: url("../images/rock-paper-scissors.jpg");
     background-repeat: no-repeat;
@@ -30,6 +28,7 @@ body {
     text-align: center;
 }
 
+/*Styling for the three column sectionS*/
 .column {
     grid-template-columns: auto auto; 
     display:flex;
@@ -37,11 +36,11 @@ body {
     align-items: center; 
     float: left;
     width: 60%;
-    padding: 1rem;
-          
+    padding: 1rem;       
 }
 
-  #game-left {
+/*Specific styling for the column section which contains the players score*/
+#game-left {
     font-size: 1.5rem;
     padding:1.0em;
     background: rgb(26, 45, 64,.6);
@@ -49,13 +48,10 @@ body {
     color:#fFD200;
     font-weight: 900;
     width:20%
-  }
-  
-  
-  
-  
-  
-  #game-right {
+}
+
+/*Specific styling for the column section which contains the computers score*/
+#game-right {
    font-size: 1.5rem;
    padding:1.0em;
    background: rgb(26, 45, 64,.6);
@@ -64,8 +60,9 @@ body {
    font-weight: 900;
    width:20%
  }
- 
-#prompt{
+
+/*Styling for the prompt section at the top of the page*/
+#prompt {
     font-size: 1.5em;
     padding: 1em;
     color:#fFD200;
@@ -75,7 +72,14 @@ body {
     text-align: center;
 }
 
-button{
+/*Specific styling for the paper button*/
+#paper {
+    background-color: #f2f2f2;
+    color: #605e5e
+    }
+
+/*Styling for all three of the buttons*/  
+button {
     font-size:2.0em;
     padding:0.5em;
     margin: 2em;
@@ -84,22 +88,24 @@ button{
     cursor: pointer;
 }
 
+/*Styling for when the buttons are pressed*/
 button:active {
   transform: translateY(4px);
 }
 
-#rock{
+/*Specific styling for the rock button*/
+#rock {
     background-color: #605e5e;
     color: #fff;
 }
 
-
-
-#scissors{
+/*Specific styling for the scissors button*/
+#scissors {
 background-color: #c9c9c9;
-color: #fff;
+color:#686A6C;
 }
 
+/*Styling for the footer*/
 footer {
 	background-color:#1A2D40;
 	text-align: center;
@@ -109,27 +115,27 @@ footer {
     box-sizing: border-box;
     height: 60px;
     overflow: hidden;
+    clear: both;
 }
 
+/*Styling for the text in the footer*/
 .rules {
     text-align:center;
     padding: 1rem;
 }
 
-.rules > li{
+/*Styling for the list in the footer*/
+.rules > li {
    display: inline;
 }
 
-
-@media(max-width:600px){
+/*Styling to make the site responsive for mobile devices bringing everthing into one column*/ 
+@media(max-width:800px){
     .column{
-
-flex-direction: column;
-
-    }
-
+    flex-direction: column;
+}
     #game-left, #game-right, .column{
-        width:100%;
+    width:100%;
     }
 }
 

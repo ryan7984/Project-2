@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rock paper scissors game">
+  <meta name="keywords"  content="rock,paper,scissors,game,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -13,52 +15,45 @@
 
 <body>
    
+  <!--//A plain header with the name of the game.-->
   <div class="header">
     <h1> Rock, Paper, Scissors </h1>
-    </div>
-
-<section>
-
-  <div class="row">
-  
-  <div id="game-left" class = "column">
-  <span id="playerScore">0</span>
-  
   </div>
-  
+ 
+  <!--//The game section, three divs seperated into columns, the game in the middle and the scores left and right.-->
+  <section>
+    <div class="row">
+    <div id="game-left" class = "column">
+      <span id="playerScore">0</span>
+    </div>
     <div id="game-middle" class="column">
-     <h2 id ="prompt">Make your move:</h2>
-     <button id="rock">Rock</button>
-     <button id ="paper">Paper</button>
-     <button id ="scissors"> Scissors</button>
- </div>
+      <h2 id ="prompt">Make your move:</h2>
+      <button id="rock">Rock</button>
+      <button id ="paper">Paper</button>
+      <button id ="scissors"> Scissors</button>
+    </div>
+    <div id="game-right" class="column">
+      <span id="computerScore">0</span>
+    </div>
+    </div>
+  </section>
 
-<div id="game-right" class="column">
-   <span id="computerScore">0</span>
-
-   </div>
- </div>
-
-</section>
-
+   <!--//A plain footer with the rules of the game.-->
   <footer>
-        <ul class ="rules">
-            <li>
-            Scissors cuts Paper |
-            </li>
-            <li>
-              Paper covers Rock |
-            </li>
-            <li>
-              Rock blunts Scissors
-            </li>	
-        </ul>
+    <ul class ="rules">
+      <li>
+      Scissors cuts Paper |
+      </li>
+      <li>
+      Paper covers Rock |
+      </li>
+      <li>
+      Rock blunts Scissors
+      </li>	
+    </ul>
 	</footer>
 
-
-
-
-  
+  <!--//The link to the javascript file, placed at the end so that everthing else loads first.-->
   <script src="assets/js/script.js"></script>
 </body>
 </html
